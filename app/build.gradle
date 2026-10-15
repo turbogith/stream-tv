@@ -1,0 +1,30 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.streamtv.universel'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'com.streamtv.universel'
+        minSdk 24
+        targetSdk 34
+        versionCode 2
+        versionName '1.1'
+    }
+
+    buildTypes {
+        debug {
+            // APK de test installable directement (pas de signature release requise)
+        }
+        release {
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
